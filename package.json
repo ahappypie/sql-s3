@@ -1,0 +1,15 @@
+{
+  "name": "sql-s3",
+  "version": "0.0.1",
+  "description": "Stream the contents of arbitrary SQL tables to S3",
+  "main": "index.js",
+  "repository": "https://github.com/ahappypie/sql-s3",
+  "author": "Brian Bagdasarian",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.395.0",
+    "csv-writer": "^1.2.0",
+    "knex": "^0.16.3",
+    "mssql": "^5.0.0-beta.1"
+  }
+}
