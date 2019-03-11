@@ -45,6 +45,7 @@ const main = async () => {
 main();
 ```
 A few notes:
-* KEY_PREFIX can be used to override the database name in the S3 object name. Otherwise the file will be called ${SQL_DATABASE}/${SQL_SCHEMA}/${opts.SQL_TABLE}.csv
-* DEBUG option will log raw queries, row counts and byte flow to stdout
-* COMPRESS option will pass the stream through a Node.js Gzip stream, compressing the results
+* `KEY_PREFIX` can be used to override the database name in the S3 object name. Otherwise the file will be called `${SQL_DATABASE}/${SQL_SCHEMA}/${opts.SQL_TABLE}.csv`
+* `DEBUG` option will log raw queries, row counts and byte flow to stdout
+* `COMPRESS` option will pass the stream through a Node.js Gzip stream, compressing the results
+* `DROP_COLUMNS` variable can be used to specify columns to drop (otherwise returns `SELECT *`). Use a comma-separated list to specify multiple columns.
