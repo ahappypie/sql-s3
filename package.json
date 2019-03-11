@@ -1,6 +1,6 @@
 {
   "name": "sql-s3",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Stream the contents of arbitrary SQL tables to S3",
   "main": "index.js",
   "files": [
