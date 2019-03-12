@@ -24,7 +24,8 @@ const main = async (opts) => {
     try {
         const s = await db.stream({
             table: opts.SQL_TABLE,
-            schema: opts.SQL_SCHEMA
+            schema: opts.SQL_SCHEMA,
+            drop_columns: opts.DROP_COLUMNS
         });
 
         let sc;

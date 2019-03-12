@@ -9,7 +9,7 @@ const main = async () => {
             SQL_HOST: process.env.SQL_HOST, SQL_DATABASE: process.env.SQL_DATABASE, DEBUG: process.env.DEBUG,
             AWS_ACCESS_KEY: process.env.AWS_ACCESS_KEY, AWS_SECRET_KEY: process.env.AWS_SECRET_KEY,
             AWS_REGION: process.env.AWS_REGION, SQL_TABLE: process.env.SQL_TABLE, SQL_SCHEMA: process.env.SQL_SCHEMA,
-            COMPRESS: process.env.COMPRESS, BUCKET: process.env.BUCKET, KEY_PREFIX: process.env.KEY_PREFIX
+            COMPRESS: process.env.COMPRESS, BUCKET: process.env.BUCKET, KEY_PREFIX: process.env.KEY_PREFIX, DROP_COLUMNS: process.env.DROP_COLUMNS
         });
         console.log(s);
     } catch(ex) {
